@@ -42,20 +42,20 @@ public class Results1 extends AppCompatActivity {
         if ((bmi < 25) && (bmi >= 18.5))
 
         {
-            Statement = "Congratulations. Your BMI is Normal.";
+            Statement = "Congratulations. Your BMI is Normal.\n\n";
             Status = "Normal";
         } else if ((bmi >= 25) && (bmi < 29.9)) {
-            Statement = "You are Overweight, Eat more vegetables and lean meats. make sure you try cardio exercises everyday for at least 30 mins.";
+            Statement = "You are Overweight, Eat more vegetables and lean meats. make sure you try cardio exercises everyday for at least 30 mins.\n\n";
             Status = "Overweight";
         } else if (bmi > 30) {
-            Statement = "ATTENTION!! You are Obese. Please consult a nutritionist for your treatment.";
+            Statement = "ATTENTION!! You are Obese. Please consult a nutritionist for your treatment.\n\n";
             Status = "Obese";
         } else {
             Statement = "ATTENTION!! You are Underweight. Please consider the advice of a nutritionist to increase your BMI to a normal level. For now, please consider the following plan: \n" +
-                    "-Choose nutrient-rich food. \n" +
-                    "-Try smoothies and shakes. \n" +
-                    "-Watch when you drink.";
-            Status = "Underweight";
+                    "-  Choose nutrient-rich food. \n" +
+                    "-  Try smoothies and shakes. \n" +
+                    "-  Watch when you drink.\n\n";
+            Status = "  Underweight";
 
         }
         statement.setText(Statement);
@@ -71,18 +71,18 @@ public class Results1 extends AppCompatActivity {
 
         if ((bodytemp == 37)) // = assignment operator, == comparison
         {
-            body_temperature = "Perfect!your Body temperature is normal";
+            body_temperature = "Perfect! Your Body temperature is normal\n\n";
         } else if (bodytemp > 37) {
-            body_temperature = "Your body temperature is way too high!you may suffer from\n" +
-                    "-fever\n" +
-                    "-diabetes\n" +
-                    "-hypothyroidism";
+            body_temperature = "Your body temperature is way too high! You may suffer from\n" +
+                    "-  Fever\n" +
+                    "-  Diabetes\n" +
+                    "-  Hypothyroidism\n\n";
 
         } else if (bodytemp < 37) {
             body_temperature =
-                    "Your body temperature is way too low!you may suffer from" +
-                            "-Hypothyroidism\n" +
-                            "-Infection\n" + "-Kidney failure\n" + "Liver failure\n" + "-hypothyroidism";
+                    "Your body temperature is way too low! You may suffer from" +
+                            "-  Hypothyroidism\n" +
+                            "-  Infection\n" + "-  Kidney failure\n" + "-  Liver failure\n" + "-  Hypothyroidism\n\n";
 
 
         } else {
@@ -141,23 +141,23 @@ public class Results1 extends AppCompatActivity {
         TextView statement2 = (TextView) findViewById(R.id.statement2);
 
         if (pulse0 > 100) {
-            Statement2 = "Your pulse rate is above average!You are most likely to have tachycardia\n" +
+            Statement2 = "Your pulse rate is above average!You are most likely to have Tachycardia\n\n" +
                     "If you have the following sypmtoms you should be aware and consult and physician\n" +
-                    "-Dizziness\n" +
-                    "-Shortness of breath\n" +
-                    "-Lightheadedness.";
+                    "-  Dizziness\n" +
+                    "-  Shortness of breath\n" +
+                    "-  Lightheadedness\n\n";
         } else if (pulse0 < 60) {
             Statement2 =
-                    "Your pulse rate is below average!You are most likely to have bradycardia\n" +
-                            "bradycardia maybe caused by\n" +
-                            "-coronary artery disease\n" +
-                            "-infections such as endocarditis and myocarditis\n" +
-                            "electrolyte imbalance.";
+                    "Your pulse rate is below average!You are most likely to have Bradycardia\n" +
+                            "Bradycardia maybe caused by\n" +
+                            "-  Coronary artery disease\n" +
+                            "-  Infections such as Endocarditis and Myocarditis\n" +
+                            "-  Electrolyte imbalance\n\n";
 
 
         } else {
 
-            Statement2 = "Perfect! You have a healthy pulse.";
+            Statement2 = "  Perfect! You have a healthy pulse.\n\n";
         }
 
         statement2.setText(Statement2);
@@ -206,29 +206,29 @@ public class Results1 extends AppCompatActivity {
 
         if ((((bp > 140) && (bpd > 80)) && (Status == "Overweight")) || (((bp > 140) && (bpd > 80)) && (Status == "Obese"))) {
             Statement3 = "Your blood pressure is too high. Please follow a proper and balanced diet \n" +
-                    "You have high risk of contracting diabetes.";
+                    "You have high risk of contracting diabetes.\n\n";
         } else if ((((bp > 140) && (bpd > 80)) && (Status == "Normal")) || (((bp > 140) && (bpd > 80)) && (Status == "Underweight"))) {
             Statement3 =
                     "Your blood pressure is too high. You may have hypertension. Please make sure you rest properly. \n" +
-                            "Control your salt intake. \n" +
-                            "Do proper excercise. \n" +
-                            "Drink less alcohol. \n" +
-                            "Drink more water.";
+                            "  Control your salt intake. \n" +
+                            "  Do proper excercise. \n" +
+                            "  Drink less alcohol. \n" +
+                            "  Drink more water.\n\n";
 
 
         } else if (((((bp < 120) && (bpd < 80)) && (Status == "Overweight")) || (((bp < 120) && (bpd < 80)) && (Status == "Obese")))) {
 
             Statement3 = "Your blood pressure is too low. You may have hypotension.\n"+
-                    "-Eat a diet higher in salt.\n" +
-                    "-Drink lots of nonalcoholic fluids.\n" +
-                    "-Limit alcoholic beverages\n.";
+                    "-  Eat a diet higher in salt.\n" +
+                    "-  Drink lots of nonalcoholic fluids.\n" +
+                    "-  Limit alcoholic beverages\n\n";
         }
         else if (((((bp < 120) && (bpd < 80)) && (Status == "Normal")) || (((bp < 120) && (bpd < 80)) && (Status == "Underweight")))){
             Statement3 = "Your blood pressure is too low. Please eat a proper meal. \n" +
-                    "Do not overwork yourself, take rest.";
+                    "Do not overwork yourself, take rest.\n\n";
         }
         else {
-            Statement3 = "Congratulations! Your blood pressure is normal.";
+            Statement3 = "Congratulations! Your blood pressure is normal.\n\n";
         }
         statement3.setText(Statement3);
     }
