@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#5DADE2"
+    tools:context="com.example.tasmiachowdhury.archhacks.Menu"
+    android:baselineAligned="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Body Input!"
+        android:textSize="20dp"
+        android:paddingBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Pressure [Systole] (mm/Hg)"
+        android:textSize="15dp"/>
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blood_pressure"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="Enter here"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Pressure [Diastole] (mm/Hg)"
+        android:textSize="15dp"/>
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blood_pressure_dys"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="Enter here"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body temperature(C)"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blood_temperature"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="Enter here"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pulse(bpm)"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heart_rate"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="Enter here"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight(lbs)"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="Enter here"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height (feet)"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/height"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="Enter here"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit now"
+        android:textColor="#FDFEFE"
+        android:onClick="Evaluate"
+        android:id="@+id/evaluate"
+        android:background="#6C3483"
+     />
+</LinearLayout>
